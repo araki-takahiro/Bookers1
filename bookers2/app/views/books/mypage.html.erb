@@ -1,0 +1,6 @@
+<h1>Books</h1>
+<% @book.each do |book| %>
+	<%= attachment_image_tag book.user,:profile_image,:fill,60,60,format:'jpg' %>
+	<%= link_to book.title,book_path(book) %>
+	<%= book.body %>
+	<%end%>

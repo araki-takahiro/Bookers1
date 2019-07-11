@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row text-center">
+		<% if flash[:notice] %>
+<%= flash[:notice] %>
+<%end%>
+<h1 class=" text-center">Welcom to </br>
+	<span class="glyphicon glyphicon-inbox" aria-hidden="true">Bookers
+	!!</span>
+</h1>
+<p>
+	In <span class="glyphicon glyphicon-inbox" aria-hidden="true">Bookers</span>,</br>
+	you can share and exchange your opinions , inpressions , and emotions</br>
+	about varioius books!
+</p>
+<div>
+<div class="label label-success">
+<%= link_to "Log in",new_user_session_path %>
+</div>
+</div>
+<div>
+<div class="label label-info">
+<%= link_to "Sign up",new_user_registration_path %>
+</div>
+</div>
